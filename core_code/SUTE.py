@@ -26,7 +26,7 @@ class SUTE:
 
     def _load_pcd(self):
         data = np.loadtxt(self.pcd_path)
-        points, labels = data[:, :3], data[:, -2:]
+        points, labels = data[:, :3], data[:, -1:]
 
         return points, labels
 
